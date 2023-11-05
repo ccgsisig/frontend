@@ -1,13 +1,4 @@
-// Assets
-import avatar1 from "assets/img/avatars/avatar1.png";
-import avatar2 from "assets/img/avatars/avatar2.png";
-import avatar3 from "assets/img/avatars/avatar3.png";
-import avatar4 from "assets/img/avatars/avatar4.png";
-import avatar5 from "assets/img/avatars/avatar5.png";
-import avatar7 from "assets/img/avatars/avatar7.png";
-import avatar8 from "assets/img/avatars/avatar8.png";
-import avatar9 from "assets/img/avatars/avatar9.png";
-import avatar10 from "assets/img/avatars/avatar10.png";
+
 // Custom icons
 import {
   AdobexdLogo,
@@ -196,16 +187,12 @@ export const rtlTimelineData = [
 
 export const tablesTableData = [
   {
-    logo: avatar1,
-    name: "Esthera Jackson",
-    email: "alexa@simmmple.com",
-    subdomain: "Manager",
-    domain: "Organization",
-    status: "Online",
+    name: "Revenue",
+    domain: "17.47bn",
+    status: "10.28bn",
     date: "14/06/21",
   },
   {
-    logo: avatar2,
     name: "Alexa Liras",
     email: "laurent@simmmple.com",
     subdomain: "Programmer",
@@ -214,7 +201,6 @@ export const tablesTableData = [
     date: "12/05/21",
   },
   {
-    logo: avatar3,
     name: "Laurent Michael",
     email: "laurent@simmmple.com",
     subdomain: "Executive",
@@ -239,6 +225,15 @@ export const tablesTableData = [
     domain: "Developer",
     status: "Offline",
     date: "21/01/21",
+  },
+  {
+    logo: avatar7,
+    name: "Mark Wilson",
+    email: "mark@simmmple.com",
+    subdomain: "Designer",
+    domain: "UI/UX Design",
+    status: "Offline",
+    date: "04/09/20",
   },
   {
     logo: avatar7,

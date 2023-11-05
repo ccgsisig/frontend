@@ -32,11 +32,11 @@ import { AiFillCheckCircle } from "react-icons/ai";
 function Tables() {
   return (
     <Flex direction='column' pt={{ base: "120px", md: "75px" }}>
-      {/* Authors Table */}
+      {/* Financial Summary*/}
       <Card overflowX={{ sm: "scroll", xl: "hidden" }} pb='0px'>
         <CardHeader p='6px 0px 22px 0px'>
           <Text fontSize='lg' color='#fff' fontWeight='bold'>
-            Authors Table
+            Quarter (USD)
           </Text>
         </CardHeader>
         <CardBody>
@@ -48,25 +48,32 @@ function Tables() {
                   color='gray.400'
                   fontFamily='Plus Jakarta Display'
                   borderBottomColor='#56577A'>
+                  Quarterly
+                </Th>
+                <Th
+                  color='gray.400'
+                  fontFamily='Plus Jakarta Display'
+                  borderBottomColor='#56577A'>
+                  Sep 23
+                </Th>
+                <Th
+                  color='gray.400'
+                  fontFamily='Plus Jakarta Display'
+                  borderBottomColor='#56577A'>
+                  Jun 23
+                </Th>
+                <Th
+                  color='gray.400'
+                  fontFamily='Plus Jakarta Display'
+                  borderBottomColor='#56577A'>
+                  Mar 23
+                </Th>
+                <Th
+                  ps='0px'
+                  color='gray.400'
+                  fontFamily='Plus Jakarta Display'
+                  borderBottomColor='#56577A'>
                   Author
-                </Th>
-                <Th
-                  color='gray.400'
-                  fontFamily='Plus Jakarta Display'
-                  borderBottomColor='#56577A'>
-                  Function
-                </Th>
-                <Th
-                  color='gray.400'
-                  fontFamily='Plus Jakarta Display'
-                  borderBottomColor='#56577A'>
-                  Status
-                </Th>
-                <Th
-                  color='gray.400'
-                  fontFamily='Plus Jakarta Display'
-                  borderBottomColor='#56577A'>
-                  Employed
                 </Th>
                 <Th borderBottomColor='#56577A'></Th>
               </Tr>
@@ -95,7 +102,7 @@ function Tables() {
         <CardHeader p='6px 0px 22px 0px'>
           <Flex direction='column'>
             <Text fontSize='lg' color='#fff' fontWeight='bold' mb='.5rem'>
-              Projects Table
+              Annual Financial Summary
             </Text>
             <Flex align='center'>
               <Icon
