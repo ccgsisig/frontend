@@ -443,35 +443,27 @@ export default function Dashboard() {
 				{/* Company List */}
 				<Card p='16px'>
 					<CardBody>
-						<Flex direction='column' w='100%'>
-							<Flex direction='column' mt='24px' mb='36px' alignSelf='flex-start'>
+						<Flex direction='row' w='100%'>
+							<Flex direction='row' mt='24px' mb='36px' alignSelf='flex-start'>
 								<Text fontSize='lg' color='#fff' fontWeight='bold' mb='6px'>
 									Competing Companies
 								</Text>
 							
 							</Flex>
-							<SimpleGrid gap={{ sm: '12px' }} columns={4}>
-								<Flex direction='column'>
-									<Flex alignItems='center'>
+							<SimpleGrid gap={{ sm: '12px' }} rows={4}>
+								<Flex direction='row'>
+									<Flex alignItems='left'>
 										<IconBox as='box' h={'30px'} w={'30px'} bg='brand.200' me='6px'>
 											<WalletIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
 											Users
 										</Text>
-									</Flex>
-									<Text
-										fontSize={{ sm: 'md', lg: 'lg' }}
-										color='#fff'
-										fontWeight='bold'
-										mb='6px'
-										my='6px'>
-										32,984
-									</Text>
-									<Progress colorScheme='brand' bg='#2D2E5F' borderRadius='30px' h='5px' value={20} />
+									</Flex>					
+									
 								</Flex>
 								<Flex direction='column'>
-									<Flex alignItems='center'>
+									<Flex alignItems='left'>
 										<IconBox as='box' h={'30px'} w={'30px'} bg='brand.200' me='6px'>
 											<RocketIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
@@ -479,15 +471,7 @@ export default function Dashboard() {
 											Clicks
 										</Text>
 									</Flex>
-									<Text
-										fontSize={{ sm: 'md', lg: 'lg' }}
-										color='#fff'
-										fontWeight='bold'
-										mb='6px'
-										my='6px'>
-										2.42m
-									</Text>
-									<Progress colorScheme='brand' bg='#2D2E5F' borderRadius='30px' h='5px' value={90} />
+									
 								</Flex>
 								<Flex direction='column'>
 									<Flex alignItems='center'>
@@ -498,15 +482,7 @@ export default function Dashboard() {
 											Sales
 										</Text>
 									</Flex>
-									<Text
-										fontSize={{ sm: 'md', lg: 'lg' }}
-										color='#fff'
-										fontWeight='bold'
-										mb='6px'
-										my='6px'>
-										2,400$
-									</Text>
-									<Progress colorScheme='brand' bg='#2D2E5F' borderRadius='30px' h='5px' value={30} />
+									
 								</Flex>
 								<Flex direction='column'>
 									<Flex alignItems='center'>
@@ -517,15 +493,7 @@ export default function Dashboard() {
 											Items
 										</Text>
 									</Flex>
-									<Text
-										fontSize={{ sm: 'md', lg: 'lg' }}
-										color='#fff'
-										fontWeight='bold'
-										mb='6px'
-										my='6px'>
-										320
-									</Text>
-									<Progress colorScheme='brand' bg='#2D2E5F' borderRadius='30px' h='5px' value={50} />
+									
 								</Flex>
 							</SimpleGrid>
 						</Flex>
