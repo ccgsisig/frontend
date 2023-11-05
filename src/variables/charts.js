@@ -84,11 +84,11 @@ export const barChartOptionsDashboard = {
 
 export const lineChartDataDashboard = [
   {
-    name: "Mobile apps",
+    name: "Goldman Sachs",
     data: [500, 250, 300, 220, 500, 250, 300, 230, 300, 350, 250, 400],
   },
   {
-    name: "Websites",
+    name: "JPMorgan Chase & co.",
     data: [200, 230, 300, 350, 370, 420, 550, 350, 400, 500, 330, 550],
   },
 ];
@@ -171,7 +171,7 @@ export const lineChartOptionsDashboard = {
 
 export const lineChartDataProfile1 = [
   {
-    name: "Mobile apps",
+    name: "Goldman Sachs",
     data: [100, 250, 300, 220, 500, 250, 300, 230, 300, 350, 250, 400],
   },
 ];
@@ -260,7 +260,7 @@ export const lineChartOptionsProfile1 = {
 
 export const lineChartDataProfile2 = [
   {
-    name: "Mobile apps",
+    name: "Goldman Sachs",
     data: [100, 250, 300, 220, 500, 250, 300, 230, 300, 350, 250, 400],
   },
 ];

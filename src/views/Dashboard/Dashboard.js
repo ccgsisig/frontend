@@ -304,7 +304,7 @@ export default function Dashboard() {
 											<CartIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Sales
+											Total Revenue
 										</Text>
 									</Flex>
 									<Text
@@ -323,7 +323,7 @@ export default function Dashboard() {
 											<StatsIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Items
+											Net Interest Income and Interest Expense
 										</Text>
 									</Flex>
 									<Text
@@ -418,12 +418,12 @@ export default function Dashboard() {
 				maxW={{ sm: '100%', md: '100%' }}
 				gap='24px'
 				mb='24px'>
-				{/* Earnings Per Share */}
+				{/* Total Revenue */}
 				<Card p='28px 0px 0px 0px'>
 					<CardHeader mb='20px' ps='22px'>
 						<Flex direction='column' alignSelf='flex-start'>
 							<Text fontSize='lg' color='#fff' fontWeight='bold' mb='6px'>
-								Earnings Per Share
+								Total Revenue
 							</Text>
 							<Text fontSize='md' fontWeight='medium' color='gray.400'>
 								<Text as='span' color='green.400' fontWeight='bold'>
@@ -443,32 +443,32 @@ export default function Dashboard() {
 				{/* Company List */}
 				<Card p='16px'>
 					<CardBody>
-						<Flex direction='row' w='100%'>
+						<Flex direction='column' w='100%'>
 							<Flex direction='row' mt='24px' mb='36px' alignSelf='flex-start'>
 								<Text fontSize='lg' color='#fff' fontWeight='bold' mb='6px'>
-									Competing Companies
+									Financial Metrics
 								</Text>
 							
 							</Flex>
 							<SimpleGrid gap={{ sm: '12px' }} rows={4}>
-								<Flex direction='row'>
-									<Flex alignItems='left'>
+								<Flex direction=''>
+									<Flex alignItems='center'>
 										<IconBox as='box' h={'30px'} w={'30px'} bg='brand.200' me='6px'>
-											<WalletIcon h={'15px'} w={'15px'} color='#fff' />
+											<RocketIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Users
+											Total Revenue
 										</Text>
 									</Flex>					
 									
 								</Flex>
 								<Flex direction='column'>
-									<Flex alignItems='left'>
+									<Flex alignItems='center'>
 										<IconBox as='box' h={'30px'} w={'30px'} bg='brand.200' me='6px'>
 											<RocketIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Clicks
+											Net Interest Income
 										</Text>
 									</Flex>
 									
@@ -476,10 +476,10 @@ export default function Dashboard() {
 								<Flex direction='column'>
 									<Flex alignItems='center'>
 										<IconBox as='box' h={'30px'} w={'30px'} bg='brand.200' me='6px'>
-											<CartIcon h={'15px'} w={'15px'} color='#fff' />
+											<RocketIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Sales
+											Interest Expense
 										</Text>
 									</Flex>
 									
@@ -487,10 +487,21 @@ export default function Dashboard() {
 								<Flex direction='column'>
 									<Flex alignItems='center'>
 										<IconBox as='box' h={'30px'} w={'30px'} bg='brand.200' me='6px'>
-											<StatsIcon h={'15px'} w={'15px'} color='#fff' />
+											<RocketIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Items
+											NetIncome
+										</Text>
+									</Flex>
+									</Flex>
+
+								<Flex direction='column'>
+									<Flex alignItems='center'>
+										<IconBox as='box' h={'30px'} w={'30px'} bg='brand.200' me='6px'>
+											<RocketIcon h={'15px'} w={'15px'} color='#fff' />
+										</IconBox>
+										<Text fontSize='sm' color='gray.400'>
+											Earnings Per Share(EPS)
 										</Text>
 									</Flex>
 									
@@ -535,10 +546,10 @@ export default function Dashboard() {
 								<Flex direction='column'>
 									<Flex alignItems='center'>
 										<IconBox as='box' h={'30px'} w={'30px'} bg='brand.200' me='6px'>
-											<WalletIcon h={'15px'} w={'15px'} color='#fff' />
+											<StatsIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Users
+											Goldman Sachs
 										</Text>
 									</Flex>
 									<Text
@@ -554,10 +565,10 @@ export default function Dashboard() {
 								<Flex direction='column'>
 									<Flex alignItems='center'>
 										<IconBox as='box' h={'30px'} w={'30px'} bg='brand.200' me='6px'>
-											<RocketIcon h={'15px'} w={'15px'} color='#fff' />
+											<StatsIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Clicks
+											JPMorgan Chase & co
 										</Text>
 									</Flex>
 									<Text
@@ -573,10 +584,10 @@ export default function Dashboard() {
 								<Flex direction='column'>
 									<Flex alignItems='center'>
 										<IconBox as='box' h={'30px'} w={'30px'} bg='brand.200' me='6px'>
-											<CartIcon h={'15px'} w={'15px'} color='#fff' />
+											<StatsIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Sales
+											Black Rock
 										</Text>
 									</Flex>
 									<Text
@@ -595,7 +606,7 @@ export default function Dashboard() {
 											<StatsIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Items
+											Morgan Stanley
 										</Text>
 									</Flex>
 									<Text
