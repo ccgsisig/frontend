@@ -345,7 +345,7 @@ export default function Dashboard() {
 					<Flex direction='column'>
 						<Flex justify='space-between' align='center' mb='40px'>
 							<Text color='#fff' fontSize='lg' fontWeight='bold'>
-								Referral Tracking
+								Tracking
 							</Text>
 							<Button borderRadius='12px' w='38px' h='38px' bg='#22234B' _hover='none' _active='none'>
 								<Icon as={IoEllipsisHorizontal} color='#7551FF' />
@@ -365,7 +365,7 @@ export default function Dashboard() {
 										Invited
 									</Text>
 									<Text color='#fff' fontSize='lg' fontWeight='bold'>
-										145 people
+										45 Companies
 									</Text>
 								</Flex>
 								<Flex
@@ -376,10 +376,10 @@ export default function Dashboard() {
 									bg='linear-gradient(126.97deg, #060C29 28.26%, rgba(4, 12, 48, 0.5) 91.2%)'
 									borderRadius='20px'>
 									<Text color='gray.400' fontSize='sm' mb='4px'>
-										Bonus
+										Increase
 									</Text>
 									<Text color='#fff' fontSize='lg' fontWeight='bold'>
-										1,465
+										3%
 									</Text>
 								</Flex>
 							</Flex>
@@ -403,7 +403,7 @@ export default function Dashboard() {
 												9.3
 											</Text>
 											<Text color='gray.400' fontSize='sm'>
-												Total Score
+												Financial Stability 
 											</Text>
 										</Flex>
 									</CircularProgressLabel>
@@ -529,6 +529,7 @@ export default function Dashboard() {
 						<LineChart
 							lineChartData={lineChartDataDashboard}
 							lineChartOptions={lineChartOptionsDashboard}
+
 						/>
 					</Box>
 				</Card>
@@ -558,7 +559,7 @@ export default function Dashboard() {
 										fontWeight='bold'
 										mb='6px'
 										my='6px'>
-										32,984
+										$327.62
 									</Text>
 									<Progress colorScheme='brand' bg='#2D2E5F' borderRadius='30px' h='5px' value={20} />
 								</Flex>
@@ -568,7 +569,7 @@ export default function Dashboard() {
 											<StatsIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											JPMorgan Chase & co
+											JP Morgan Chase & co
 										</Text>
 									</Flex>
 									<Text
@@ -577,7 +578,7 @@ export default function Dashboard() {
 										fontWeight='bold'
 										mb='6px'
 										my='6px'>
-										2.42m
+										$143.00
 									</Text>
 									<Progress colorScheme='brand' bg='#2D2E5F' borderRadius='30px' h='5px' value={90} />
 								</Flex>
@@ -596,7 +597,7 @@ export default function Dashboard() {
 										fontWeight='bold'
 										mb='6px'
 										my='6px'>
-										2,400$
+										$657.97
 									</Text>
 									<Progress colorScheme='brand' bg='#2D2E5F' borderRadius='30px' h='5px' value={30} />
 								</Flex>
@@ -615,7 +616,7 @@ export default function Dashboard() {
 										fontWeight='bold'
 										mb='6px'
 										my='6px'>
-										320
+										$76.26
 									</Text>
 									<Progress colorScheme='brand' bg='#2D2E5F' borderRadius='30px' h='5px' value={50} />
 								</Flex>
