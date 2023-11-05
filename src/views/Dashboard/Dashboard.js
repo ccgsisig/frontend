@@ -73,7 +73,7 @@ export default function Dashboard() {
 										fontWeight='bold'
 										ps='3px'
 										fontSize='md'>
-										+55%
+										+55
 									</StatHelpText>
 								</Flex>
 							</Stat>
@@ -444,29 +444,11 @@ export default function Dashboard() {
 				<Card p='16px'>
 					<CardBody>
 						<Flex direction='column' w='100%'>
-							<Box
-								bg='linear-gradient(126.97deg, #060C29 28.26%, rgba(4, 12, 48, 0.5) 91.2%)'
-								borderRadius='20px'
-								display={{ sm: 'flex', md: 'block' }}
-								justify={{ sm: 'center', md: 'flex-start' }}
-								align={{ sm: 'center', md: 'flex-start' }}
-								minH={{ sm: '180px', md: '220px' }}
-								p={{ sm: '0px', md: '22px' }}>
-								<BarChart
-									barChartOptions={barChartOptionsDashboard}
-									barChartData={barChartDataDashboard}
-								/>
-							</Box>
 							<Flex direction='column' mt='24px' mb='36px' alignSelf='flex-start'>
 								<Text fontSize='lg' color='#fff' fontWeight='bold' mb='6px'>
-									Active Users
+									Competing Companies
 								</Text>
-								<Text fontSize='md' fontWeight='medium' color='gray.400'>
-									<Text as='span' color='green.400' fontWeight='bold'>
-										(+23%)
-									</Text>{' '}
-									than last week
-								</Text>
+							
 							</Flex>
 							<SimpleGrid gap={{ sm: '12px' }} columns={4}>
 								<Flex direction='column'>
@@ -575,29 +557,11 @@ export default function Dashboard() {
 				<Card p='16px'>
 					<CardBody>
 						<Flex direction='column' w='100%'>
-							<Box
-								bg='linear-gradient(126.97deg, #060C29 28.26%, rgba(4, 12, 48, 0.5) 91.2%)'
-								borderRadius='20px'
-								display={{ sm: 'flex', md: 'block' }}
-								justify={{ sm: 'center', md: 'flex-start' }}
-								align={{ sm: 'center', md: 'flex-start' }}
-								minH={{ sm: '180px', md: '220px' }}
-								p={{ sm: '0px', md: '22px' }}>
-								<BarChart
-									barChartOptions={barChartOptionsDashboard}
-									barChartData={barChartDataDashboard}
-								/>
-							</Box>
 							<Flex direction='column' mt='24px' mb='36px' alignSelf='flex-start'>
 								<Text fontSize='lg' color='#fff' fontWeight='bold' mb='6px'>
-									Active Users
+									Competing Companies
 								</Text>
-								<Text fontSize='md' fontWeight='medium' color='gray.400'>
-									<Text as='span' color='green.400' fontWeight='bold'>
-										(+23%)
-									</Text>{' '}
-									than last week
-								</Text>
+								
 							</Flex>
 							<SimpleGrid gap={{ sm: '12px' }} columns={4}>
 								<Flex direction='column'>
