@@ -73,7 +73,7 @@ export default function Dashboard() {
 										fontWeight='bold'
 										ps='3px'
 										fontSize='md'>
-										+55%
+										+55
 									</StatHelpText>
 								</Flex>
 							</Stat>
@@ -304,7 +304,7 @@ export default function Dashboard() {
 											<CartIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Sales
+											Total Revenue
 										</Text>
 									</Flex>
 									<Text
@@ -323,7 +323,7 @@ export default function Dashboard() {
 											<StatsIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Items
+											Net Interest Income and Interest Expense
 										</Text>
 									</Flex>
 									<Text
@@ -345,7 +345,7 @@ export default function Dashboard() {
 					<Flex direction='column'>
 						<Flex justify='space-between' align='center' mb='40px'>
 							<Text color='#fff' fontSize='lg' fontWeight='bold'>
-								Referral Tracking
+								Tracking
 							</Text>
 							<Button borderRadius='12px' w='38px' h='38px' bg='#22234B' _hover='none' _active='none'>
 								<Icon as={IoEllipsisHorizontal} color='#7551FF' />
@@ -365,7 +365,7 @@ export default function Dashboard() {
 										Invited
 									</Text>
 									<Text color='#fff' fontSize='lg' fontWeight='bold'>
-										145 people
+										45 Companies
 									</Text>
 								</Flex>
 								<Flex
@@ -376,10 +376,10 @@ export default function Dashboard() {
 									bg='linear-gradient(126.97deg, #060C29 28.26%, rgba(4, 12, 48, 0.5) 91.2%)'
 									borderRadius='20px'>
 									<Text color='gray.400' fontSize='sm' mb='4px'>
-										Bonus
+										Increase
 									</Text>
 									<Text color='#fff' fontSize='lg' fontWeight='bold'>
-										1,465
+										3%
 									</Text>
 								</Flex>
 							</Flex>
@@ -403,7 +403,7 @@ export default function Dashboard() {
 												9.3
 											</Text>
 											<Text color='gray.400' fontSize='sm'>
-												Total Score
+												Financial Stability 
 											</Text>
 										</Flex>
 									</CircularProgressLabel>
@@ -418,12 +418,12 @@ export default function Dashboard() {
 				maxW={{ sm: '100%', md: '100%' }}
 				gap='24px'
 				mb='24px'>
-				{/* Earnings Per Share */}
+				{/* Total Revenue */}
 				<Card p='28px 0px 0px 0px'>
 					<CardHeader mb='20px' ps='22px'>
 						<Flex direction='column' alignSelf='flex-start'>
 							<Text fontSize='lg' color='#fff' fontWeight='bold' mb='6px'>
-								Earnings Per Share
+								Total Revenue
 							</Text>
 							<Text fontSize='md' fontWeight='medium' color='gray.400'>
 								<Text as='span' color='green.400' fontWeight='bold'>
@@ -444,49 +444,23 @@ export default function Dashboard() {
 				<Card p='16px'>
 					<CardBody>
 						<Flex direction='column' w='100%'>
-							<Box
-								bg='linear-gradient(126.97deg, #060C29 28.26%, rgba(4, 12, 48, 0.5) 91.2%)'
-								borderRadius='20px'
-								display={{ sm: 'flex', md: 'block' }}
-								justify={{ sm: 'center', md: 'flex-start' }}
-								align={{ sm: 'center', md: 'flex-start' }}
-								minH={{ sm: '180px', md: '220px' }}
-								p={{ sm: '0px', md: '22px' }}>
-								<BarChart
-									barChartOptions={barChartOptionsDashboard}
-									barChartData={barChartDataDashboard}
-								/>
-							</Box>
-							<Flex direction='column' mt='24px' mb='36px' alignSelf='flex-start'>
+							<Flex direction='row' mt='24px' mb='36px' alignSelf='flex-start'>
 								<Text fontSize='lg' color='#fff' fontWeight='bold' mb='6px'>
-									Active Users
+									Financial Metrics
 								</Text>
-								<Text fontSize='md' fontWeight='medium' color='gray.400'>
-									<Text as='span' color='green.400' fontWeight='bold'>
-										(+23%)
-									</Text>{' '}
-									than last week
-								</Text>
+							
 							</Flex>
-							<SimpleGrid gap={{ sm: '12px' }} columns={4}>
-								<Flex direction='column'>
+							<SimpleGrid gap={{ sm: '12px' }} rows={4}>
+								<Flex direction=''>
 									<Flex alignItems='center'>
 										<IconBox as='box' h={'30px'} w={'30px'} bg='brand.200' me='6px'>
-											<WalletIcon h={'15px'} w={'15px'} color='#fff' />
+											<RocketIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Users
+											Total Revenue
 										</Text>
-									</Flex>
-									<Text
-										fontSize={{ sm: 'md', lg: 'lg' }}
-										color='#fff'
-										fontWeight='bold'
-										mb='6px'
-										my='6px'>
-										32,984
-									</Text>
-									<Progress colorScheme='brand' bg='#2D2E5F' borderRadius='30px' h='5px' value={20} />
+									</Flex>					
+									
 								</Flex>
 								<Flex direction='column'>
 									<Flex alignItems='center'>
@@ -494,56 +468,43 @@ export default function Dashboard() {
 											<RocketIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Clicks
+											Net Interest Income
 										</Text>
 									</Flex>
-									<Text
-										fontSize={{ sm: 'md', lg: 'lg' }}
-										color='#fff'
-										fontWeight='bold'
-										mb='6px'
-										my='6px'>
-										2.42m
-									</Text>
-									<Progress colorScheme='brand' bg='#2D2E5F' borderRadius='30px' h='5px' value={90} />
+									
 								</Flex>
 								<Flex direction='column'>
 									<Flex alignItems='center'>
 										<IconBox as='box' h={'30px'} w={'30px'} bg='brand.200' me='6px'>
-											<CartIcon h={'15px'} w={'15px'} color='#fff' />
+											<RocketIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Sales
+											Interest Expense
 										</Text>
 									</Flex>
-									<Text
-										fontSize={{ sm: 'md', lg: 'lg' }}
-										color='#fff'
-										fontWeight='bold'
-										mb='6px'
-										my='6px'>
-										2,400$
-									</Text>
-									<Progress colorScheme='brand' bg='#2D2E5F' borderRadius='30px' h='5px' value={30} />
+									
 								</Flex>
 								<Flex direction='column'>
 									<Flex alignItems='center'>
 										<IconBox as='box' h={'30px'} w={'30px'} bg='brand.200' me='6px'>
-											<StatsIcon h={'15px'} w={'15px'} color='#fff' />
+											<RocketIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Items
+											NetIncome
 										</Text>
 									</Flex>
-									<Text
-										fontSize={{ sm: 'md', lg: 'lg' }}
-										color='#fff'
-										fontWeight='bold'
-										mb='6px'
-										my='6px'>
-										320
-									</Text>
-									<Progress colorScheme='brand' bg='#2D2E5F' borderRadius='30px' h='5px' value={50} />
+									</Flex>
+
+								<Flex direction='column'>
+									<Flex alignItems='center'>
+										<IconBox as='box' h={'30px'} w={'30px'} bg='brand.200' me='6px'>
+											<RocketIcon h={'15px'} w={'15px'} color='#fff' />
+										</IconBox>
+										<Text fontSize='sm' color='gray.400'>
+											Earnings Per Share(EPS)
+										</Text>
+									</Flex>
+									
 								</Flex>
 							</SimpleGrid>
 						</Flex>
@@ -568,6 +529,7 @@ export default function Dashboard() {
 						<LineChart
 							lineChartData={lineChartDataDashboard}
 							lineChartOptions={lineChartOptionsDashboard}
+
 						/>
 					</Box>
 				</Card>
@@ -575,38 +537,20 @@ export default function Dashboard() {
 				<Card p='16px'>
 					<CardBody>
 						<Flex direction='column' w='100%'>
-							<Box
-								bg='linear-gradient(126.97deg, #060C29 28.26%, rgba(4, 12, 48, 0.5) 91.2%)'
-								borderRadius='20px'
-								display={{ sm: 'flex', md: 'block' }}
-								justify={{ sm: 'center', md: 'flex-start' }}
-								align={{ sm: 'center', md: 'flex-start' }}
-								minH={{ sm: '180px', md: '220px' }}
-								p={{ sm: '0px', md: '22px' }}>
-								<BarChart
-									barChartOptions={barChartOptionsDashboard}
-									barChartData={barChartDataDashboard}
-								/>
-							</Box>
 							<Flex direction='column' mt='24px' mb='36px' alignSelf='flex-start'>
 								<Text fontSize='lg' color='#fff' fontWeight='bold' mb='6px'>
-									Active Users
+									Competing Companies
 								</Text>
-								<Text fontSize='md' fontWeight='medium' color='gray.400'>
-									<Text as='span' color='green.400' fontWeight='bold'>
-										(+23%)
-									</Text>{' '}
-									than last week
-								</Text>
+								
 							</Flex>
 							<SimpleGrid gap={{ sm: '12px' }} columns={4}>
 								<Flex direction='column'>
 									<Flex alignItems='center'>
 										<IconBox as='box' h={'30px'} w={'30px'} bg='brand.200' me='6px'>
-											<WalletIcon h={'15px'} w={'15px'} color='#fff' />
+											<StatsIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Users
+											Goldman Sachs
 										</Text>
 									</Flex>
 									<Text
@@ -615,17 +559,17 @@ export default function Dashboard() {
 										fontWeight='bold'
 										mb='6px'
 										my='6px'>
-										32,984
+										$327.62
 									</Text>
 									<Progress colorScheme='brand' bg='#2D2E5F' borderRadius='30px' h='5px' value={20} />
 								</Flex>
 								<Flex direction='column'>
 									<Flex alignItems='center'>
 										<IconBox as='box' h={'30px'} w={'30px'} bg='brand.200' me='6px'>
-											<RocketIcon h={'15px'} w={'15px'} color='#fff' />
+											<StatsIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Clicks
+											JP Morgan Chase & co
 										</Text>
 									</Flex>
 									<Text
@@ -634,17 +578,17 @@ export default function Dashboard() {
 										fontWeight='bold'
 										mb='6px'
 										my='6px'>
-										2.42m
+										$143.00
 									</Text>
 									<Progress colorScheme='brand' bg='#2D2E5F' borderRadius='30px' h='5px' value={90} />
 								</Flex>
 								<Flex direction='column'>
 									<Flex alignItems='center'>
 										<IconBox as='box' h={'30px'} w={'30px'} bg='brand.200' me='6px'>
-											<CartIcon h={'15px'} w={'15px'} color='#fff' />
+											<StatsIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Sales
+											Black Rock
 										</Text>
 									</Flex>
 									<Text
@@ -653,7 +597,7 @@ export default function Dashboard() {
 										fontWeight='bold'
 										mb='6px'
 										my='6px'>
-										2,400$
+										$657.97
 									</Text>
 									<Progress colorScheme='brand' bg='#2D2E5F' borderRadius='30px' h='5px' value={30} />
 								</Flex>
@@ -663,7 +607,7 @@ export default function Dashboard() {
 											<StatsIcon h={'15px'} w={'15px'} color='#fff' />
 										</IconBox>
 										<Text fontSize='sm' color='gray.400'>
-											Items
+											Morgan Stanley
 										</Text>
 									</Flex>
 									<Text
@@ -672,7 +616,7 @@ export default function Dashboard() {
 										fontWeight='bold'
 										mb='6px'
 										my='6px'>
-										320
+										$76.26
 									</Text>
 									<Progress colorScheme='brand' bg='#2D2E5F' borderRadius='30px' h='5px' value={50} />
 								</Flex>
