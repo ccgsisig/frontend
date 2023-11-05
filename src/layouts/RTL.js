@@ -1,6 +1,6 @@
 
 
-// Chakra imports
+/*// Chakra imports
 import { ChakraProvider, Portal, useDisclosure } from "@chakra-ui/react";
 import { RtlProvider } from "components/RTLProvider/RTLProvider";
 import Configurator from "components/Configurator/Configurator";
@@ -157,3 +157,4 @@ export default function Dashboard(props) {
     </ChakraProvider>
   );
 }
+*/
